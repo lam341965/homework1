@@ -1,0 +1,43 @@
+<!--显示区域-->
+<view class='scr'>
+  <view class='num'>{{num}}</view>
+  <view class='fun'>{{fun}}</view>
+</view>
+
+<!--功能区域-->
+<view class='cal'>
+  <view class='line1'>
+    <view class='but_ fun fun1' hover-class="tou" hover-start-time="50" hover-stay-time="100" bindtap="ac" data-value="ac">AC</view>
+    <view class='but_ fun fun2' hover-class="tou" hover-start-time="50" hover-stay-time="100" bindtap="del" data-value="del">DEL</view>
+    <block wx:for="{{cal_fun}}" wx:key='cal0'>
+      <view class="but_ fun fun{{index+3}}" hover-class="tou" hover-start-time="50" hover-stay-time="100" bindtap="funbut" data-value="{{item}}">{{item}}</view>
+    </block>
+  </view>
+
+  <view class='line2'>
+    <block wx:for="{{cal_num1}}" wx:key='cal1'>
+      <view class='but_ num num{{item}}' hover-class="tou" hover-start-time="50" hover-stay-time="100" bindtap="numbut" data-value="{{item}}">{{item}}</view>
+    </block>
+    <view class='but_ fun fun5' hover-class="tou" hover-start-time="50" hover-stay-time="100" bindtap="funbut" data-value="*">*</view>
+  </view>
+
+  <view class='line3'>
+    <block wx:for="{{cal_num2}}" wx:key='cal2'>
+      <view class='but_ num num{{item}}' hover-class="tou" hover-start-time="50" hover-stay-time="100" bindtap="numbut" data-value="{{item}}">{{item}}</view>
+    </block>
+    <view class='but_ fun fun6' hover-class="tou" hover-start-time="50" hover-stay-time="100" bindtap="funbut" data-value="-">-</view>
+  </view>
+
+  <view class='line4'>
+    <block wx:for="{{cal_num3}}" wx:key='cal3'>
+      <view class='but_ num num{{item}}' hover-class="tou" hover-start-time="50" hover-stay-time="100" bindtap="numbut" data-value="{{item}}">{{item}}</view>
+    </block>
+    <view class='but_ fun fun7' hover-class="tou" hover-start-time="50" hover-stay-time="100" bindtap="funbut" data-value="+">+</view>
+  </view>
+
+  <view class='line5'>
+    <view class='but_ num num0' hover-class="tou" hover-start-time="50" hover-stay-time="100" bindtap="numbut" data-value="0">0</view>
+    <view class='but_ fun fun8' hover-class="tou" hover-start-time="50" hover-stay-time="100" bindtap="poi" data-value=".">.</view>
+    <view class='but_ fun fun9' hover-class="tou" hover-start-time="50" hover-stay-time="100" bindtap="funbut" data-value="=">=</view>
+  </view>
+</view>

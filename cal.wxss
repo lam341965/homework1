@@ -1,0 +1,48 @@
+/*显示区域样式*/
+.scr {
+  width: 100%;
+  margin: 0 auto;
+  height: 200rpx;
+  line-height: 200rpx;
+  text-align: center;
+  font-size: 30px;
+}
+
+/*隐藏运算符*/
+.fun {
+  font-size: 0px;
+}
+
+/*为什么这两个分开就能做到只隐藏运算符+保证按钮的颜色效果，放在一块儿就会导致按钮运算符被隐藏呢？*/
+.fun {
+  color: rgba(255, 145, 0, 0.945);
+}
+
+/*按钮排版*/
+.cal>view{ 
+  flex:1;
+  display:flex;
+}
+
+.but_ {
+  width: 187.5rpx;
+  text-align: center;
+  height: 187.5rpx;
+  line-height: 187.5rpx;
+  margin-bottom: 1rpx;
+  margin-right: 1rpx;
+  margin-left: 1rpx;
+  margin-top: 1rpx;
+  border-radius: 10rpx;
+  font-size: 25px;
+  background-color: whitesmoke;
+}
+
+.num0 {
+  width: 375rpx;
+}
+
+/*触摸反馈*/
+.tou {
+  background-color: lightgray;
+}
